@@ -1,0 +1,20 @@
+header,
+.navbar {
+  background-color: #ee6161;
+}
+.navbar ul li a {
+  color: black;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+.navbar a {
+  color: black;
+  text-decoration: solid;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: black;
+}
