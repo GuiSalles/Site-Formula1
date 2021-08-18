@@ -1,3 +1,4 @@
+/* Header */
 header,
 .navbar {
   background-color: #ee6161;
@@ -17,4 +18,29 @@ header,
 }
 .navbar a:hover {
   color: black;
+}
+
+/* Main */
+.container-fluid {
+  text-align: center;
+  height: 700px;
+  background: url("https://ik.imagekit.io/hchmam5le6h/carroparadasso_ijZu5IcBi_e.jpg?updatedAt=1629250048276");
+  opacity: 90%;
+}
+
+.texto {
+  height: 400px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Industry, monospace;
+  font-size: 80px;
+}
+
+.texto p::after {
+  content: "";
+  width: 400px;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
 }
