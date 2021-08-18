@@ -25,22 +25,31 @@ header,
   text-align: center;
   height: 700px;
   background: url("https://ik.imagekit.io/hchmam5le6h/carroparadasso_ijZu5IcBi_e.jpg?updatedAt=1629250048276");
-  opacity: 90%;
+  opacity: 100%;
 }
 
-.texto {
-  height: 400px;
-  text-align: center;
+.texto .um {
   color: rgb(255, 255, 255);
-  font-family: Industry, monospace;
+  font-family: "Indusrty", monospace;
   font-size: 80px;
+  text-align: center;
 }
 
-.texto p::after {
+.texto .um::after {
   content: "";
-  width: 400px;
-  height: 4px;
+  width: 350px;
+  height: 5px;
   display: block;
   margin: 0 auto;
   background: #fff;
+}
+
+.texto {
+  padding-top: 20px;
+  padding-left: 150px;
+  width: 1200px;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: justify;
 }
