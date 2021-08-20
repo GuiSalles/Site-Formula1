@@ -114,6 +114,7 @@ header,
 /* News */
 #news {
   height: 800px;
+  margin-bottom: 100px;
 }
 #news h4 {
   padding-top: 40px;
@@ -157,4 +158,9 @@ header,
   font-family: "Bebas Neue";
   font-weight: bold;
   padding-bottom: 20px;
+}
+
+#footer {
+  background: rgb(54, 53, 53);
+  height: 100px;
 }
