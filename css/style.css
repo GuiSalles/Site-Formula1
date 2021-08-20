@@ -32,7 +32,7 @@ header,
   color: rgb(255, 255, 255);
   font-family: "Bebas Neue", monospace;
   font-size: 60px;
-  text-align: center;
+  text-align: left;
 }
 
 .texto .um::after {
@@ -40,18 +40,17 @@ header,
   width: 200px;
   height: 4px;
   display: block;
-  margin: 0 auto;
   background: #fff;
 }
 
 .texto {
-  padding-top: 10px;
+  padding-top: 50px;
   padding-left: 400px;
   width: 1400px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 /* Pilotos */
@@ -121,6 +120,7 @@ header,
   color: black;
   font-size: 70px;
 }
+
 #news h4::after {
   content: "";
   width: 200px;
@@ -128,4 +128,33 @@ header,
   display: block;
   margin: 0 auto;
   background: black;
+}
+
+#news h5 {
+  padding-top: 40px;
+  color: black;
+  font-size: 50px;
+}
+
+#news h6 {
+  color: black;
+  font-size: 30px;
+  font-weight: normal;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.descricao {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  padding-bottom: 20px;
+}
+
+.titulonews {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  padding-bottom: 20px;
 }
