@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!--css-->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -21,9 +24,9 @@
 <body>
   <!--Header-->
   <header>
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
       <a class="navbar-brand" href="index.html">
-        <img src="img/logo.jpg" width="60" height="60" class="d-inline-block" alt="F1 feeder series">
+        <img src="img/logo.png" width="60" height="60" class="d-inline-block" alt="F1 feeder series">
         F1 Feeder Series
       </a>
       <nav class="navbar navbar-expand-lg">
@@ -49,7 +52,18 @@
       </nav>
   </header>
   <main>
-    <div class="container-fluid">
+
+    <div id="hdrcerto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Nosso site-->
+    <div class="container" id="nosso-site">
       <div class="texto">
         <p class="um">Nosso site</p>
         <p>Este site foi montado para mostrar mais sobre a Fórmula 1, esporte mundialmente conhecido e praticado. Além disso, mostrar a história do esporte e as grandes figuras que marcaram seu nome na Fórmula 1.
@@ -58,7 +72,49 @@
         </p>
       </div>
     </div>
+
+    <!--Pilotos-->
+    <div id="pilotos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo">Grandes pilotos</h3>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://ik.imagekit.io/hchmam5le6h/senna_F7Tv1UboRc-.jpg?updatedAt=1629483903647" class="card-img-top" alt="Ayrton Senna">
+              <div class="card-body">
+                <h5 class="card-title">Ayrton Senna</h5>
+                <p class="card-text">Piloto brasileiro. Conquistou três vezes o campeonato mundial, em 1988, 1990 e 1991. Morreu no auge da carreira, pilotando no circuito de Ímola, na Itália.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://ik.imagekit.io/hchmam5le6h/schumacher4_PZGQ8XpXE.jpg?updatedAt=1629484749616" class="card-img-top" alt="Michael Schumacher">
+              <div class="card-body">
+                <h5 class="card-title">Michael Schumacher</h5>
+                <p class="card-text">Piloto com maior número de vitórias no campeonato mundial da categoria: foi sete vezes campeão e bateu quase todos os recordes possíveis do esporte.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://ik.imagekit.io/hchmam5le6h/lh_2xixPnROZ.jpg?updatedAt=1629484936668" class="card-img-top" alt="Lewis Hamilton">
+              <div class="card-body">
+                <h5 class="card-title">Lewis Hamilton</h5>
+                <p class="card-text">Sete vezes campeão mundial de Fórmula 1,Hamilton é considerado um dos maiores pilotos de todos os tempos, e um dos desportistas mais bem sucedidos da história.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="botao1">
+            <button type="button" class="btn btn-primary btn-lg" id="btn1">História da F1</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+
 
 
   </main>
