@@ -23,9 +23,10 @@ header,
 /* Nosso site */
 #nosso-site {
   max-width: 100%;
-  text-align: center;
-  height: 700px;
+  text-align: left;
+  height: 500px;
   background: url("https://ik.imagekit.io/hchmam5le6h/1111_jm3b0SmrZ.jpg?updatedAt=1629483144330");
+  background-size: cover;
 }
 
 .texto .um {
@@ -44,9 +45,7 @@ header,
 }
 
 .texto {
-  padding-top: 50px;
-  padding-left: 400px;
-  width: 1400px;
+  padding: 50px 30px 50px 30px;
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -160,7 +159,23 @@ header,
   padding-bottom: 20px;
 }
 
+/* footer */
 #footer {
   background: rgb(54, 53, 53);
-  height: 100px;
+  height: 120px;
+  color: #fff;
+  padding: 30px 30px 30px 30px;
+  text-align: left;
 }
+
+#footer h3{
+  padding: auto;
+  display: inline;
+}
+
+#footer img{
+  display: inline;
+  margin-right: 20px;
+  height: 60px;
+}
+
