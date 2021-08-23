@@ -51,8 +51,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Tabela </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="newsletter.html">Newsletter</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="newsletter.html">Newsletter</a>
               </li>
             </ul>
           </div>
@@ -61,22 +61,69 @@
 
     <main>
 
+        <div id="bgnews">
+            <div class="container">
+                <div class="row">
+                    <div id="regrastxt" class="col-md-12">
+                        <h2 class="titulo aniup">Newsletter</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="news-inicio">
+            <div class="container">
+                <div class="row aniblow">
+                    <div class="col-md-12">
+                        <h3 class="subtitulo">Fique por dentro das novidades</h3>
+                        <p class="txt">Nos acompanhe em nossas redes sociais para ficar por dentro de todas as novidades
+                        do mundo da Formula 1
+                        </p>
+                    </div>
+                    <div class="col-md-12 rdbx" align="middle">
+                        <div class="redesbox">
+
+                                <a href="https://twitter.com/f1feederseries1" target="_blank">
+                                    <i class="fab fa-twitter-square"></i>
+                                    <h4>Twitter</h4>
+                                </a>
+                        </div>
+                        <div class="redesbox">
+                                <a href="https://www.reddit.com/r/F1FeederSeries/" target="_blank">
+                                <i class="fab fa-reddit"></i>
+                                    <h4>Reddit</h4>
+                                </a>
+                        </div>
+                        <div class="redesbox">
+                                <a href="https://www.instagram.com/f1feederseries/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                    <h4>instagram</h4>
+                                </a>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="txt">Você também pode se inscrever em nossa Newsletter e receber todas a notícias
+                            no seu e-mail. Ao se inscrever, nos mande uma mensagem contado o que gostaria de ver no site 😄.
+                            </p>
+                            <p class="txt">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="form-area">
             <div class="container">
                 <div class="row">
                   <div class="col-md-12">
                     <h3 class="titulo">INSCREVA-SE!</h3>
-                    <form action="https://formspree.io/f/mbjqpbrb" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="_replyto">
-                    </label>
-                    <label>
-                        Your message:
-                        <textarea name="message"></textarea>
-                    </label>
+                    <form action="https://formspree.io/f/mbjqpbrb" method="POST" target="_blank">
+                        <input id="email-area" class="form-control" type="email" name="_replyto" placeholder="Digite seu e-mail" required>
+                        <textarea id="message-area" class="form-control" name="message" placeholder="Deixe uma mensagem"></textarea>
                     <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
+                        <div class="col-md-12" align="center">
+                            <button type="submit" class="btn btn-dark">INSCREVER-SE</button>
+                        </div>
                     </form>
                    </div>
                 </div>

@@ -40,7 +40,7 @@ header,
   font-weight: bold;
 }
 
-.navbar ul li .active {
+.navbar .active {
   color: rgb(94, 143, 218);
 }
 
@@ -440,9 +440,96 @@ header,
 
 /*newsletter*/
 
+#bgnews{
+  width: 100%;
+  height: 200px;
+  margin-top: 85px;
+  background: url("../img/newsbg.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#news-inicio .aniblow {
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  animation-delay: 10s;
+  animation: 1s aniblow 1s forwards;
+}
+
 #form-area{
   height: 500px;
   width: 100%;
   padding: 50px;
-  margin: 60px auto;
+  margin: 0px auto 20px auto;
+}
+
+#email-area{
+
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+  box-sizing: border-box;
+  width: 40%;
+  height: 40px;
+
+}
+
+#message-area{
+
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+  box-sizing: border-box;
+  width: 40%;
+  height: 100px;
+
+}
+
+.form-control{
+  border: 2px solid black;
+}
+
+.btn-dark{
+  background: rgb(54, 53, 53);
+  border: 2px solid rgb(54, 53, 53);
+  width: 15%;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.redesbox {
+  display: inline-block;
+  height: 100px;
+  margin: 10px auto 20px auto;
+  padding: 0 20px 0 20px;
+}
+
+.rbdx{
+  height: 100px;
+  text-align: center;
+
+}
+
+.redesbox a{
+  transition: .5s;
+}
+
+.redesbox a {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.redesbox h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.redesbox:hover > a{
+  color: rgb(94, 143, 218);
 }
