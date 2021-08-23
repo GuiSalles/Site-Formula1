@@ -30,6 +30,10 @@ header,
   font-weight: bold;
 }
 
+.navbar ul li .active {
+  color: rgb(94, 143, 218);
+}
+
 /* Nosso site */
 #nosso-site {
   max-width: 100%;
@@ -328,6 +332,10 @@ header,
 
 #vdregras{
   margin-bottom: 50px;
+}
+
+.anistartleft, .anistartright, .anistartblow{
+  opacity: 0;
 }
 
 .anileft{

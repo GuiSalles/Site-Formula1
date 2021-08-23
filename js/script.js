@@ -1,37 +1,108 @@
 $(document).ready(function(){
 
-/*let navBtn = $('regras-menu');
+// Debounce do Lodash
+debounce = function(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
 
-let licSection = $('#licenca');
-let corSection = $('#corrida');
-let campSection = $('#camps');
-let pontSection = $('#pontos');
-let pneSection = $('#pneus');
-let ngrSection = $('#nregras');
 
-let scrollTo = '';
+(function(){
+	var $target = $('.anistartleft'),
+			animationClass = 'anileft',
+			offset = $(window).height() * 15/16;
 
-$(navBtn).click(function() {
+	function animeScrollleft() {
+		var documentTop = $(document).scrollTop();
 
-  let btnId = $(this).attr('id');
+		$target.each(function(){
+			var itemTop = $(this).offset().top;
+			if (documentTop > itemTop - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
 
-  if(btnId == 'navlic') {
-    scrollTo = licSection;
-  } else if(btnId == 'navcor') {
-    scrollTo = corSection;
-  } else if(btnId == 'navcamp') {
-    scrollTo = campSection;
-  } else if(btnId == 'navpont') {
-    scrollTo = pontSection;
-  } else if(btnId == 'navpne') {
-    scrollTo = pneSection;
-  } else if(btnId == 'navnov') {
-    scrollTo = ngrSection;
-  }
+	animeScrollleft();
 
-  $([document.documentElement, document.body]).animate({
-      scrollTop: $(scrollTo).offset().top - 70
-  }, 1500);
-});*/
+	$(document).scroll(debounce(function(){
+		animeScrollleft();
+	}, 0));
+})();
+
+(function(){
+	var $target = $('.anistartright'),
+			animationClass = 'aniright',
+			offset = $(window).height() * 15/16;
+
+	function animeScrollright() {
+		var documentTop = $(document).scrollTop();
+
+		$target.each(function(){
+			var itemTop = $(this).offset().top;
+			if (documentTop > itemTop - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
+
+	animeScrollright();
+
+	$(document).scroll(debounce(function(){
+		animeScrollright();
+	}, 0));
+})();
+
+(function(){
+	var $target = $('.anistartblow'),
+			animationClass = 'aniblow',
+			offset = $(window).height() * 15/16;
+
+	function animeScrollblow() {
+		var documentTop = $(document).scrollTop();
+
+		$target.each(function(){
+			var itemTop = $(this).offset().top;
+			if (documentTop > itemTop - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
+
+	animeScrollblow();
+
+	$(document).scroll(debounce(function(){
+		animeScrollblow();
+	}, 0));
+})();
+
+//scroll suave
+
+$('#regras-inicio a').click(function(e){
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			menuHeight = $('#regras-inicio').innerHeight(),
+			targetOffset = $(id).offset().top;
+	$('html, body').animate({
+		scrollTop: targetOffset - (menuHeight - 400)
+	}, 1000);
+});
+
 
 });
