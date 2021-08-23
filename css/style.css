@@ -87,22 +87,18 @@ header,
   text-align: center;
   padding-bottom: 60px;
   font-size: 60px;
-  font-weight: bold;
   font-family: "Bebas Neue", cursive;
   color: white;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #000;
   margin-top: 40px;
 }
 
 .titulo::after {
   content: "";
-  width: 200px;
-  height: 6px;
+  width: 250px;
+  height: 3px;
   display: block;
   margin: 0 auto;
   background: white;
-  border: 2px solid black;
 }
 
 #pilotos {
@@ -529,4 +525,51 @@ header,
 
 .redesbox:hover > a {
   color: rgb(94, 143, 218);
+}
+
+/* Historia */
+
+#introtxt {
+  margin-top: 85px;
+}
+
+#ttl {
+  max-width: 100%;
+  padding-top: 60px;
+  text-align: center;
+  background: url("../img/fundohist.jpg");
+}
+
+#ttl p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+#ttl p::after {
+  content: "";
+  width: 150px;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background: white;
+}
+
+#criacao {
+  height: 700px;
+  width: max-content;
+  padding-top: 50px;
+}
+
+#imgcriacao {
+  background: url("../img/cr1.jpg");
+  height: 370px;
+  width: 450px;
+  border-radius: 360px;
+}
+
+#alinhar {
+  margin: 0;
 }
