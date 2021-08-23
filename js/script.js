@@ -113,4 +113,10 @@ $('#regras-inicio a').click(function(e){
       $('#form-area').parallax({imageSrc: '../img/formbg.jpg'});
   }, 250);
 
+	 setTimeout(function() {
+
+		$('#pilotos').parallax({imageSrc: '../img/home1.jpg'});
+}, 500);
+
+
 });
