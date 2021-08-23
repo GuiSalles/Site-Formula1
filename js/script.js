@@ -105,4 +105,12 @@ $('#regras-inicio a').click(function(e){
 });
 
 
+
+    // Parallax
+
+    setTimeout(function() {
+
+      $('#form-area').parallax({imageSrc: '../img/formbg.jpg'});
+  }, 250);
+
 });
