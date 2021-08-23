@@ -17,6 +17,12 @@
 
   <script src="https://kit.fontawesome.com/03864492ca.js" crossorigin="anonymous"></script>  <!--css-->
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
@@ -40,21 +46,194 @@
                 <a class="nav-link" href="#">História</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Regras </a>
+                <a class="nav-link active" href="regras.html">Regras </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Tabela </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Newsletter</a>
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
               </li>
             </ul>
           </div>
         </nav>
     </header>
+
     <main>
-  
-     
+        <div id="bgregras">
+            <div class="container">
+                <div class="row">
+                    <div id="regrastxt" class="col-md-12">
+                        <h2 class="titulo aniup">Regras</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="regras-inicio">
+            <div class="container">
+                <div class="row aniblow">
+                    <div id="rbox1" class="col-md-12">
+                        <h3 class="subtitulo">Quem faz as regras da F1?</h3>
+                        <p class="txt">Quem dita as regras da F1 é a Federação Internacional de Automobilismo (conhecida 
+                        como FIA), é uma associação não lucrativa originalmente criada em 1904 e representa interesses 
+                        sobre automobilismo e usos de automóveis. Seu atual presidente é Jean Todt.</p>
+                        <p class="txt">As regras são:</p>
+                    </div>
+                    <div class="col-md-4 regrasbox">
+                        <a class="regras-menu" id="navlic" href="#licenca">
+                            <i class="fas fa-id-badge"></i>
+                            <h4>Licença</h4>
+                            </a>
+                    </div>
+                    <div class="col-md-4 regrasbox">
+                        <a class="regras-menu" id="navcor" href="#corrida">
+                            <i class="fas fa-flag-checkered"></i>
+                            <h4>Corrida</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 regrasbox">
+                        <a class="regras-menu" id="navcamp" href="#camps">
+                            <i class="fas fa-trophy"></i>
+                            <h4>Campeonato</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 regrasbox">
+                        <a class="regras-menu" id="navpont" href="#pontos">
+                            <i class="fas fa-award"></i>
+                            <h4>Pontuação</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 regrasbox">
+                        <a class="regras-menu" id="navpne" href="#pneus">
+                            <i class="fas fa-compact-disc"></i>
+                            <h4>Pneus</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 regrasbox">
+                        <a class="regras-menu" id="navnov" href="#nregras">
+                            <i class="fas fa-book"></i>
+                            <h4>Novas Regras</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="licenca" class="rgbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 anistartleft">
+                        <img src="img/licenca.jpg" alt="licença" class="imgrg" align="center">
+                    </div>
+                    <div class="col-md-6 anistartright">
+                        <h3 class="subtitulo strg">Licença</h3>
+                        <p class="txt">Não é exatamente uma Carteira de Habilitação, mas a Fórmula 1 também exige
+                        que seus pilotos estejam habilitados para dirigir em suas corridas.</p>
+                        <p class="txt">Conforme o regulamento, todos os pilotos, competidores e oficiais que 
+                        participam do mundial da Fórmula 1 devem possuir uma licença.</p>
+                        <p class="txt">Os comissários podem impor pontos de penalidade. Se um piloto acumular 
+                        12 pontos de penalização, a sua licença será suspensa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="corrida" class="rgbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 anistartleft">
+                        <img src="img/corrida.jpg" alt="corrida" class="imgrg" align="center">
+                    </div>
+                    <div class="col-md-6 anistartright">
+                        <h3 class="subtitulo strg">Corrida</h3>
+                        <p class="txt">Todas as corridas da F1 devem ter número de voltas suficientes para completar a 
+                        distância de 305 km, desde o sinal de largada até o final de corrida. Porém, se o tempo de 
+                        duração de um GP ultrapassar 2 horas, a corrida será encerrada, com o então primeiro colocado sendo 
+                        declarado vencedor.</p>
+                        <p class="txt">De acordo com o regulamento da FIA, o número máximo de corridas na Fórmula 1 em um 
+                        campeonato é 21, e o mínimo é 8.</p>
+                        <p class="txt">Além disso, um GP pode ser cancelado se menos de 12 carros estiverem disponíveis para ele.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="camps" class="rgbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 anistartleft">
+                        <img src="img/camps.jpg" alt="campeonatos" class="imgrg" align="center">
+                    </div>
+                    <div class="col-md-6 anistartright">
+                        <h3 class="subtitulo strg">Campeonatos</h3>
+                        <p class="txt">O título do piloto do mundial de Fórmula 1 é atribuído ao piloto que 
+                        obtiver o maior número de pontos, levando em consideração todos os resultados obtidos 
+                        durante os GPs da temporada.</p>
+                        <p class="txt">Já o título do mundial de construtores da Fórmula 1 será concedido à equipe 
+                        que somar o maior número de pontos, sendo os resultados de ambos os carros.</p>
+                        <p class="txt">E, se no fim do campeonato, houver empate em pontos? O Maior número de primeiros lugares
+                        define o vencedor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pontos" class="rgbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 anistartleft">
+                        <img src="img/pontos.jpg" alt="Pontuação" class="imgrg" align="center">
+                    </div>
+                    <div class="col-md-6 anistartright">
+                        <h3 class="subtitulo strg">Pontuação</h3>
+                        <p class="txt">Por muitos anos, a vitória valeu 10 pontos para o vencedor. Mas, nas últimas 
+                        décadas, o sistema de pontuação da Fórmula 1 foi modificado, mais pilotos passaram a pontuar 
+                        e cresceram os valores atribuídos às melhores colocações em cada grande prêmio.</p>
+                        <p class="txt">Atualmente, os 10 primeiros colocados somam pontos. O primeiro colocado ganha 
+                        25 pontos, enquanto o décimo recebe apenas 1.</p>
+                        <p class="txt">Ganha o campeonato o piloto que mais acumular pontos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pneus" class="rgbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 anistartleft">
+                        <img src="img/pneus.jpg" alt="pneus" class="imgrg" align="center">
+                    </div>
+                    <div class="col-md-6 anistartright">
+                        <h3 class="subtitulo strg">Pneus</h3>
+                        <p class="txt">Atualmente, são 5 os tipos de pneus para pistas secas, 
+                        mas com a divisão entre três categorias: duros, médios e macios.</p>
+                        <p class="txt">A cada GP, são selecionados três tipos de compostos dentro de graus de durabilidade. 
+                        Por fim de semana de corrida, os pilotos são obrigados a usar os três tipos de pneus disponíveis, 
+                        sendo dois deles na corrida.</p>
+                        <p class="txt">Agora, a Pirelli usa números para indicar quais são os 5 
+                        tipos de compostos. Também há duas opções de pneus de chuva na F1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nregras" class="rgbar">
+            <div class="container">
+                <div class="row anistartblow">
+                    <div class="col-md-12">
+                        <h3 class="subtitulo strg">Novas Regras</h3>
+                        <p class="txt">Confira esse vídeo contando como serão as novas regras da F1 em 2022</p>
+                    </div>
+                    <div id="vdregras" class="col-md-12" align="center">
+                        <iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/Muwx07p4024" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
   
     <!-- Footer -->
@@ -72,11 +251,11 @@
                     <h3 class="tfooter">Mapa do Site</h3>
                     <div class="menuf">
                       <p>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="">História</a>
-                        <a href="">Regras</a>
+                        <a href="regras.html">Regras</a>
                         <a href="">Tabela</a>
-                        <a href="">Newsletter</a>
+                        <a href="newsletter.html">Newsletter</a>
                       </p>
                     </div>
                   </div>
@@ -106,13 +285,11 @@
     </footer>
   
     <!-- js -->
-    <link rel="stylesheet" href="js/script.js">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    
+
+    <script src="js/script.js"></script>
+    
   
-  
+    </body>
   </html>
   

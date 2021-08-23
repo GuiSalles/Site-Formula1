@@ -3,10 +3,30 @@
   background: rgb(53, 52, 52);
 }
 
+a{
+  color: #fff;
+  font-weight: bold;
+}
+
+#news a {
+  color:black;
+  font-weight: normal;
+}
+
+ a:hover{
+  color: rgb(94, 143, 218);
+  text-decoration: none;
+}
+
+#news a:hover{
+  color: rgb(94, 143, 218);
+  text-decoration: none;
+}
+
 /* Header */
 header,
 .navbar {
-  background: transparent;
+  background: rgb(53, 52, 52);;
 }
 .navbar ul li a {
   color: white;
@@ -20,6 +40,10 @@ header,
   font-weight: bold;
 }
 
+.navbar ul li .active {
+  color: rgb(94, 143, 218);
+}
+
 /* Nosso site */
 #nosso-site {
   max-width: 100%;
@@ -31,17 +55,20 @@ header,
 
 .texto .um {
   color: rgb(255, 255, 255);
-  font-family: "Bebas Neue", monospace;
   font-size: 60px;
-  text-align: left;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
 }
 
 .texto .um::after {
   content: "";
-  width: 200px;
-  height: 4px;
+  width: 205px;
+  height: 6px;
   display: block;
-  background: #fff;
+  background: white;
+  border: 2px solid black;
 }
 
 .texto {
@@ -50,6 +77,8 @@ header,
   font-size: 30px;
   font-weight: bold;
   text-align: left;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
 }
 
 /* Pilotos */
@@ -60,15 +89,18 @@ header,
   font-weight: bold;
   font-family: "Bebas Neue", cursive;
   color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
 }
 
 .titulo::after {
   content: "";
   width: 200px;
-  height: 4px;
+  height: 6px;
   display: block;
   margin: 0 auto;
   background: white;
+  border: 2px solid black;
 }
 
 #pilotos {
@@ -186,16 +218,6 @@ header,
   text-align: center;
 }
 
-footer a{
-  color: #fff;
-  font-weight: bold;
-}
-
-footer a:hover{
-  color: rgb(94, 143, 218);
-  text-decoration: none;
-}
-
 #footer .menuf{
   text-align: center;
   word-spacing: 11.7px;
@@ -220,8 +242,6 @@ footer a:hover{
   padding-top: 15px;
 }
 
-
-
 #copy::before{
   content: "";
   width: 100%;
@@ -229,4 +249,200 @@ footer a:hover{
   display: block;
   margin: 0 auto;
   background: white;
+}
+
+/* Regras */
+
+#bgregras{
+  width: 100%;
+  height: 200px;
+  margin-top: 85px;
+  background: url("../img/regrasbg.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.subtitulo {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+}
+
+.subtitulo::after {
+  content: "";
+  width: 200px;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background: black;
+}
+
+.txt {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  padding-bottom: 10px;
+}
+
+.regrasbox {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 10px auto 20px auto;
+}
+
+.regrasbox a{
+  transition: .5s;
+}
+
+.regrasbox a {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.regrasbox a::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  background: black;
+}
+
+.regrasbox h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.regrasbox:hover > a{
+  color: rgb(94, 143, 218);
+}
+
+#licenca{
+  margin-top: 90px;
+}
+
+.imgrg {
+
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+.strg{
+  padding-top: 0;
+}
+
+.rgbar::before{
+  content: "";
+  width: 1200px;
+  height: 15px;
+  display: block;
+  margin: 20px auto;
+  background: rgb(53, 52, 52);
+  border-radius: 20px;
+}
+
+#vdregras{
+  margin-bottom: 50px;
+}
+
+/*aimações*/
+
+.anistartleft, .anistartright, .anistartblow{
+  opacity: 0;
+}
+
+.anileft{
+  overflow: hidden;
+  position: relative;
+  animation: anileft 2s ease forwards;
+}
+
+@keyframes anileft {
+  from {
+    opacity: 0;
+    transform: translateX(-101%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.aniright{
+  overflow: hidden;
+  position: relative;
+  animation: aniright 2s ease forwards;
+}
+
+@keyframes aniright {
+  from {
+    opacity: 0;
+    transform: translateX(101%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.aniup{
+  overflow: hidden;
+  position: relative;
+  animation: aniup 1s ease forwards;
+}
+
+@keyframes aniup {
+  from {
+    opacity: 0;
+    transform: translateY(-101%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.aniblow{
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  animation-delay: 10s;
+  animation: aniblow 2s forwards;
+}
+
+#regras-inicio .aniblow {
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  animation-delay: 10s;
+  animation: 1s aniblow 1s forwards;
+}
+
+@keyframes aniblow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*newsletter*/
+
+#form-area{
+  height: 500px;
+  width: 100%;
+  padding: 50px;
+  margin: 60px auto;
 }
