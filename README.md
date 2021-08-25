@@ -7,11 +7,12 @@
 
 # 🏎 Indice 🏎
 
-- [Sobre](#-Sobre-#)
-- [Ferramentas utilizadas](#-Ferramentas-utilizadas-#)
-- [Como baixar o projeto](#-Como-baixar-o-projeto-#)
-- [Fontes de pesquisa](#-Fontes-de-pesquisa-#)
-- [Desenvolvimento-do-site](#-Desenvolvimento-do-site-#)
+- Sobre
+- Ferramentas utilizadas
+- Fontes de pesquisa
+- Desenvolvimento do site
+- Como baixar o projeto
+- Créditos##
 
 ---
 
