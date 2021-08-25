@@ -70,7 +70,32 @@ debounce = function(func, wait, immediate) {
 (function(){
 	var $target = $('.anistartblow'),
 			animationClass = 'aniblow',
-			offset = $(window).height() * 15/16;
+			offset = $(window).height() * 7/8;
+
+	function animeScrollblow() {
+		var documentTop = $(document).scrollTop();
+
+		$target.each(function(){
+			var itemTop = $(this).offset().top;
+			if (documentTop > itemTop - offset) {
+				$(this).addClass(animationClass);
+			} else {
+				$(this).removeClass(animationClass);
+			}
+		});
+	}
+
+	animeScrollblow();
+
+	$(document).scroll(debounce(function(){
+		animeScrollblow();
+	}, 0));
+})();
+
+(function(){
+	var $target = $('.anistarprogress'),
+			animationClass = 'progress-bar-animated',
+			offset = $(window).height() * 31/32;
 
 	function animeScrollblow() {
 		var documentTop = $(document).scrollTop();

@@ -315,7 +315,8 @@ header,
 
 .anistartleft,
 .anistartright,
-.anistartblow {
+.anistartblow,
+.anistartprogress {
   opacity: 0;
 }
 
@@ -380,7 +381,7 @@ header,
   animation: aniblow 2s forwards;
 }
 
-#regras-inicio .aniblow, #news-inicio .aniblow, #saiba-inicio .aniblow, #infobox .aniblow {
+#regras-inicio .aniblow, #news-inicio .aniblow, #saiba-inicio .aniblow{
   opacity: 0;
   overflow: hidden;
   position: relative;
@@ -600,7 +601,7 @@ header,
   display: inline-block;
   overflow: hidden;
   position: relative;
-  animation: 3s progress 1s forwards;
+  animation: 3s progress forwards;
 }
 
 @keyframes progress {
