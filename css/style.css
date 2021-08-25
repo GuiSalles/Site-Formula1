@@ -74,9 +74,7 @@ header,
   font-size: 25px;
   font-weight: bold;
   text-align: left;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #000;
-
+  text-shadow: 0.1em 0.1em 0.2em black;
   max-width: 1200px;
 }
 
@@ -86,8 +84,7 @@ header,
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
   color: white;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #000;
+  text-shadow: 0.1em 0.1em 0.2em black;
   height: 90px;
   margin-bottom: 20px;
 }
@@ -103,7 +100,10 @@ header,
   display: block;
   margin: 0 auto;
   background: white;
-  border: 1px solid black;
+  border: 1px solid transparent;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
 }
 
 #pilotos {
@@ -377,15 +377,13 @@ header,
   opacity: 0;
   overflow: hidden;
   position: relative;
-  animation-delay: 10s;
   animation: aniblow 2s forwards;
 }
 
-#regras-inicio .aniblow {
+#regras-inicio .aniblow, #news-inicio .aniblow, #saiba-inicio .aniblow, #infobox .aniblow {
   opacity: 0;
   overflow: hidden;
   position: relative;
-  animation-delay: 10s;
   animation: 1s aniblow 1s forwards;
 }
 
@@ -409,14 +407,6 @@ header,
   background-size: cover;
   text-align: center;
   padding-top: 50px;
-}
-
-#news-inicio .aniblow {
-  opacity: 0;
-  overflow: hidden;
-  position: relative;
-  animation-delay: 10s;
-  animation: 1s aniblow 1s forwards;
 }
 
 #form-area {
@@ -456,8 +446,7 @@ header,
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .redesbox {
@@ -572,4 +561,107 @@ header,
   border-radius: 200px;
   margin-top: 120px;
   margin-bottom: 20px;
+}
+
+/* saiba+ */
+
+#bgsaiba {
+  width: 100%;
+  height: 200px;
+  margin-top: 85px;
+  background: url("../img/bgregras.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.progress{
+  width: 80%;
+  height: 8px;
+  border: 1px solid black;
+  color: black;
+  margin: 0px auto 10px auto;
+  border-radius: 0;
+}
+
+.ham-bar .progress-bar{
+  background: #03BFB5;
+}
+
+.senna-bar .progress-bar{
+  background: #f2b608;
+}
+
+.schumi-bar .progress-bar{
+  background: #F60000;
+}
+
+.progress-bar-animated{
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  animation: 3s progress 1s forwards;
+}
+
+@keyframes progress {
+  from{
+    transform: translateX(-101%);
+  }
+
+  to{
+    transform: translateX(0%);
+  }
+}
+
+#infobox{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#infobox .infobox-bg{
+  padding: 10px 0 20px 0;
+  margin: 3% 1%;
+  background-color: rgb(54, 53, 53);
+  border-radius: 20px;
+}
+
+#infobox h4{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  letter-spacing: .05em;
+}
+
+#infobox h4::after{
+  content: "";
+  max-width: 100%;
+  height: 2px;
+  display: block;
+  margin: 10px auto;
+  background: white;
+}
+
+#infobox .txtinfo{
+  display: inline-block;
+  margin-top: 15px;
+  height: 20px;
+  font-size: 24px;
+  font-family: "Bebas Neue";
+  color: #fff;
+  position: relative;
+  letter-spacing: .03em;
+}
+
+#infobox .txtleft{
+  text-align: left;
+  width: 70%;
+  left: 6%;
+}
+
+#infobox .txtright{
+  text-align: right;
+  width: 20%;
+  right: 6%;
 }
