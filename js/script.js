@@ -110,12 +110,12 @@ $('#regras-inicio a').click(function(e){
 
     setTimeout(function() {
 
-      $('#form-area').parallax({imageSrc: '../img/formbg.jpg'});
+      $('#form-area').parallax({imageSrc: 'img/formbg.jpg'});
   }, 250);
 
 	 setTimeout(function() {
 
-		$('#pilotos').parallax({imageSrc: '../img/home1.jpg'});
+		$('#pilotos').parallax({imageSrc: 'img/home1.jpg'});
 }, 500);
 
 
