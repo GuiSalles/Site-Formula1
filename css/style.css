@@ -922,6 +922,37 @@ header,
     position: relative;
     right: 237px;
   }
+
+  #imgcriacao{
+    width: 100%;
+  }
+
+  #imgcriacao2{
+    
+    width: 100%;
+
+  }
+
+  #imganos60{
+    
+    width: 100%;
+  }
+
+  #imganos70{
+    margin-top: 200px;
+    width: 100%;
+
+  }
+
+  #imganos80{
+    margin-top: 200px;
+    width: 100%;
+  }
+
+  #imganos2000{
+    margin-top: 200px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px){
