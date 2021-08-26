@@ -108,6 +108,7 @@ header,
 
 #pilotos {
   background: url("..img/home1.jpg");
+  max-width: 100%;
 }
 
 #pilotos p {
@@ -146,7 +147,7 @@ header,
 
 /* News */
 #news {
-  height: 800px;
+  height: 100%;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -161,13 +162,19 @@ header,
 }
 
 #footer .parte1 {
-  display: inline-block;
+  display: inline;
   padding: 30px 0px 0px 0px;
 }
 
-#footer p {
+#p1tfooter{
+  display: inline-block;
+}
+
+#footer span {
+  display: inline-block;
   position: relative;
-  left: 6px;
+  left: 95px;
+  top: -20px;
 }
 
 #footer img {
@@ -678,6 +685,31 @@ header,
  
 
 @media screen and (max-width: 768px){
+
+  #nregras{
+    display:none;
+  }
+
+  @keyframes anileft {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aniright {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+  } 
+  
   .texto{
     font-size: 20px;
   }
@@ -688,12 +720,57 @@ header,
   #imgcriacao{
     margin-top: 50px;
   }
+
   #form-area{
     margin: 0;
+  }
+  
+  #footer span {
+   display: none;
+  }
+
+  #footer .parte1 img{
+    position: relative;
+    left: 65px;
+  }
+
+  #p1tfooter{
+    margin-bottom: 0;
+  }
+
+  #footer .parte1{
+    padding-top: 15px;
+  }
+
+  .card {
+    margin: 30px 30px 0px 0;
+  }
+
+  #pilotos p{
+    text-align: center;
+  }
+
+  #pilotos{
+    background: url(../img/home1.jpg);
+  }
+
+  .texto .titulo::after {
+    width: 205px;
+    position: relative;
+    right: 237px;
   }
 }
 
 @media screen and (max-width: 425px){
+
+  .subtitulo{
+    font-size: 36px;
+  }
+
+  .txt{
+    font-size: 16px;
+  }
+
   .texto{
     font-size: 14px;
   }
@@ -746,4 +823,52 @@ header,
   #segfim{
     height: 2400px;
   }
+
+  #footer span {
+    display: none;
+   }
+ 
+   #footer .parte1 img{
+     position: relative;
+     left: 180px;
+     padding-bottom: 5px;
+   }
+ 
+   #p1tfooter{
+     padding-bottom: 40px;
+     position: relative;
+     top: 50px;
+     left: 23px;
+   }
+ 
+   #footer .parte1{
+     padding-top: 15px;
+   }
+
+   .card {
+    margin: 20px auto;
+  }
+
+  .texto .titulo::after {
+    width: 205px;
+    position: relative;
+    right: 65px;
+  }
+
+  #news{
+    height: 100%;
+  }
+
+  #segfim{
+    height: 100%;
+  }
+
+  #imganos60, #imganos2000, #imganos80{
+    margin-top: 20px;
+  }
+
+  #pneus{
+    height: 100%;
+  }
+  
 } 
