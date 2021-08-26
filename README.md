@@ -12,7 +12,7 @@
 - Fontes de pesquisa
 - Desenvolvimento do site
 - Como baixar o projeto
-- Créditos##
+- Créditos
 
 ---
 
