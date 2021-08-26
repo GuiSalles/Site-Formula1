@@ -143,5 +143,51 @@ $('#regras-inicio a').click(function(e){
 		$('#pilotos').parallax({imageSrc: 'img/home1.jpg'});
 }, 500);
 
+	//top5 filtro
 
+	$('.filter-btn').on('click', function() {
+
+		let type = $(this).attr('id');
+		let boxes = $('.project-box');
+
+		$('.main-btn').removeClass('active');
+    	$(this).addClass('active');
+
+    	if(type == 'a-btn') {
+      	eachBoxes('ddzss', boxes);
+    	} 
+		else if(type == 'b-btn') {
+      	eachBoxes('ddzst', boxes);
+    	} 
+		else if(type == 'c-btn') {
+      	eachBoxes('ddzt', boxes);
+    	} 
+		else if(type == 'd-btn') {
+		eachBoxes('ddzn', boxes);
+		}
+		else if(type == 'e-btn') {
+		eachBoxes('dvt', boxes);
+		}
+		else if(type == 'f-btn') {
+		eachBoxes('dvtum', boxes);
+		}
+		else {
+      	eachBoxes('all', boxes);
+    	}
+});
+
+function eachBoxes(type, boxes) {
+
+    if(type == 'all') {
+      $(boxes).fadeIn();
+    } else {
+      $(boxes).each(function() {
+        if(!$(this).hasClass(type)) {
+          $(this).fadeOut('slow');
+        } else {
+          $(this).fadeIn();
+        }
+      });
+    }
+  }
 });
