@@ -237,7 +237,7 @@ header,
 
 .subtitulo::after {
   content: "";
-  width: 200px;
+  width: 20%;
   height: 4px;
   display: block;
   margin: 0 auto;
@@ -270,7 +270,7 @@ header,
 
 .regrasbox a::after {
   content: "";
-  width: 200px;
+  width: 60%;
   height: 1px;
   display: block;
   margin: 0 auto;
@@ -302,7 +302,7 @@ header,
 
 .rgbar::before {
   content: "";
-  width: 1200px;
+  width: 90%;
   height: 15px;
   display: block;
   margin: 20px auto;
@@ -321,6 +321,7 @@ header,
 .anistartblow,
 .anistartprogress {
   opacity: 0;
+  overflow: hidden;
 }
 
 .anileft {
@@ -513,7 +514,7 @@ header,
 
 .segesquerda::after {
   content: "";
-  width: 900px;
+  width: 80%;
   height: 4px;
   display: block;
   margin: 0 auto;
@@ -533,7 +534,7 @@ header,
 
 .segdireita::after {
   content: "";
-  width: 900px;
+  width: 80%;
   height: 4px;
   display: block;
   margin: 0 auto;
@@ -671,4 +672,57 @@ header,
   text-align: right;
   width: 20%;
   right: 6%;
+}
+
+@media(max-width: 768px) {
+  #nregras{
+    display:none;
+  }
+
+  @keyframes anileft {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+  @keyframes aniright {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+}
+
+@media(max-width: 320px) {
+  #nregras{
+    display:none;
+  }
+
+  @keyframes anileft {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+  @keyframes aniright {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 }
