@@ -441,16 +441,19 @@ header,
   border: 2px solid black;
 }
 
-.btn-dark {
+#btn-news {
   background: rgb(54, 53, 53);
-  border: 2px solid rgb(54, 53, 53);
-  width: 15%;
-  border-radius: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 18px;
-  margin-top: 20px;
+}
+
+#btn-news:hover {
+  background: #252525;
   text-shadow: 0.1em 0.1em 0.2em black;
 }
+
 
 .redesbox {
   display: inline-block;
