@@ -71,10 +71,10 @@
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/GuiSalles/Curso-git.git
+$ git clone https://github.com/GuiSalles/Site-Formula1
 
 # Entrar no diretório
-$ cd curso-git
+$ cd site-formula1
 
 # Outro método para download do código
 - Acessar o repositório no Github > Abrir a aba Code > Download Zip
