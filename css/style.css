@@ -926,6 +926,10 @@ header,
 
 @media screen and (max-width: 425px){
 
+  .imgrg{
+    margin-top: 0;
+  }
+
   .subtitulo{
     font-size: 36px;
   }
