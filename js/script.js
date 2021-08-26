@@ -95,7 +95,7 @@ debounce = function(func, wait, immediate) {
 (function(){
 	var $target = $('.anistarprogress'),
 			animationClass = 'progress-bar-animated',
-			offset = $(window).height() * 63/64;
+			offset = $(window).height();
 
 	function animeScrollblow() {
 		var documentTop = $(document).scrollTop();

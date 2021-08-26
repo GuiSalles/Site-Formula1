@@ -864,6 +864,14 @@ header,
     opacity: 1;
   }
   } 
+
+  .txt{
+    font-size: 20px;
+  }
+  
+  .imgrg{
+    margin-top: 30%;
+  }
   
   .texto{
     font-size: 20px;
