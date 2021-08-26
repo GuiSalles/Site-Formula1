@@ -674,55 +674,76 @@ header,
   right: 6%;
 }
 
-@media(max-width: 768px) {
-  #nregras{
-    display:none;
+
+ 
+
+@media screen and (max-width: 768px){
+  .texto{
+    font-size: 20px;
+  }
+  .card{
+    width: 230px;
+    height: 605px;
+  }
+  #imgcriacao{
+    margin-top: 50px;
+  }
+  #form-area{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .texto{
+    font-size: 14px;
   }
 
-  @keyframes anileft {
-    from {
-      opacity: 0;
-    }
+  #news{
+    height: 550px;
   
-    to {
-      opacity: 1;
-    }
-}
-
-  @keyframes aniright {
-  from {
-    opacity: 0;
   }
-
-  to {
-    opacity: 1;
-  }
-}
-}
-
-@media(max-width: 320px) {
-  #nregras{
-    display:none;
-  }
-
-  @keyframes anileft {
-    from {
-      opacity: 0;
-    }
   
-    to {
-      opacity: 1;
-    }
-}
-
-  @keyframes aniright {
-  from {
-    opacity: 0;
+  #form-area{
+    margin: 0;
   }
 
-  to {
-    opacity: 1;
+  #imgcriacao{
+    width: 400px;
   }
-}
 
-}
+  #imgcriacao2{
+    width: 400px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  #imganos60{
+    width: 400px;
+  }
+
+  #imganos70{
+    width: 400px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  #imganos80{
+    width: 400px;
+  }
+
+  #imganos2000{
+    width: 400px;
+  }
+
+  #pneus{
+    height: 1000px;
+  }
+
+  #nregras{
+    height: 1500px;
+    width: 470px;
+  }
+  #segfim{
+    height: 2400px;
+  }
+} 
